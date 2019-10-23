@@ -2,6 +2,10 @@
 
 A complete build of [libwebp](https://developers.google.com/speed/webp/docs/using), including all CLI tools.
 
+## Why not the formula from homebrew-core?
+
+The formula from homebrew-core disables many of the CLI tools that libwebp provides.
+
 ## Installation
 
 `brew install skyzyx/webp/webp-full`
