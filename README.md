@@ -2,21 +2,33 @@
 
 A complete build of [libwebp](https://developers.google.com/speed/webp/docs/using), including all CLI tools.
 
+Last built/tested on macOS 12.6 ”Monterey” with Xcode 13.4.1 on both Intel and Apple Silicon CPUs.
+
 ## Why not the formula from homebrew-core?
 
 The formula from homebrew-core disables many of the CLI tools that libwebp provides.
 
 ## Installation
 
-`brew install skyzyx/webp/webp-full`
+```bash
+brew unlink webp
+brew install skyzyx/ffmpeg/webp-full
+```
 
-Or `brew tap skyzyx/webp` and then `brew install webp-full`.
-
-Or install via URL (which will not receive updates):
+Or…
 
 ```bash
-brew install https://raw.githubusercontent.com/skyzyx/homebrew-webp/master/Formula/webp-full.rb
+brew tap skyzyx/webp
+brew install webp-full
 ```
+
+Or, if you’re debugging with a local clone (or you’re _Future Ryan_ and you’re trying to remember how to do this):
+
+```bash
+brew install --verbose --debug --build-from-source ./Formula/webp-full.rb
+```
+
+(You might need to use `reinstall` instead.)
 
 ## Support
 
