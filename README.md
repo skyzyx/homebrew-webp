@@ -2,7 +2,7 @@
 
 A complete build of [libwebp](https://developers.google.com/speed/webp/docs/using), including all CLI tools.
 
-Last built/tested on macOS 13.3 ”Ventura” with Xcode 14.2.0 on both Intel and Apple Silicon CPUs.
+Last built/tested on macOS 14.0 ”Sonoma” with Xcode 15.0.0 on both Intel and Apple Silicon CPUs.
 
 ## Why not the formula from homebrew-core?
 
@@ -12,7 +12,7 @@ The formula from homebrew-core disables many of the CLI tools that libwebp provi
 
 ```bash
 brew unlink webp
-brew install skyzyx/ffmpeg/webp-full
+brew install skyzyx/webp/webp-full
 ```
 
 Or, if you’re debugging with a local clone (or you’re _Future Ryan_ and you’re trying to remember how to do this):
